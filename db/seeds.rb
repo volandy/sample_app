@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create!(name: "Andrii Volkov",
-			 email: "avolkov@plslogistics.com",
+			 email: "volandy14@gmail.com",
 			 password: "123654",
 			 password_confirmation: "123654",
 			 admin: true,

@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create!(name: "Andrii Volkov",
-			 email: "volandy14@gmail.com",
+			 email: "avolkov@plslogistics.com",
 			 password: "123654",
 			 password_confirmation: "123654",
 			 admin: true,
@@ -30,6 +30,14 @@ User.create!(name: "Valentyn Rubliuk",
 			 activated: true,
 			 activated_at: Time.zone.now)
 
+User.create!(name: "Anna Sverdlovska",
+			 email: "asverdlovska@plslogistics.com",
+			 password: "0938528883",
+			 password_confirmation: "0938528883",
+			 admin: false,
+			 activated: true,
+			 activated_at: Time.zone.now)
+
 99.times do |n|
 	name = Faker::Name.name
 	email = "example-#{n+1}@railstutorial.org"
@@ -47,3 +55,11 @@ users = User.order(:created_at).take(6)
   content = Faker::Lorem.sentence(5)
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+#Following  relationships
+users = User.all
+user = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }

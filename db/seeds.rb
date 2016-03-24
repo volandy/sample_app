@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create!(name: "Andrii Volkov",
-			 email: "avolkov@example.com",
+			 email: "avolkov@plslogistics.com",
 			 password: "123654",
 			 password_confirmation: "123654",
 			 admin: true,
@@ -15,7 +15,7 @@ User.create!(name: "Andrii Volkov",
 			 activated_at: Time.zone.now)
 
 User.create!(name: "Nazar Tkach",
-			 email: "ntkach@example.com",
+			 email: "ntkach@plslogistics.com",
 			 password: "0977072683",
 			 password_confirmation: "0977072683",
 			 admin: false,
@@ -23,7 +23,7 @@ User.create!(name: "Nazar Tkach",
 			 activated_at: Time.zone.now)
 
 User.create!(name: "Valentyn Rubliuk",
-			 email: "vrubliuk@example.com",
+			 email: "vrubliuk@plslogistics.com",
 			 password: "0637574922",
 			 password_confirmation: "0637574922",
 			 admin: false,
@@ -31,7 +31,7 @@ User.create!(name: "Valentyn Rubliuk",
 			 activated_at: Time.zone.now)
 
 User.create!(name: "Anna Sverdlovska",
-			 email: "asverdlovska@example.com",
+			 email: "asverdlovska@plslogistics.com",
 			 password: "0938528883",
 			 password_confirmation: "0938528883",
 			 admin: false,
@@ -39,7 +39,7 @@ User.create!(name: "Anna Sverdlovska",
 			 activated_at: Time.zone.now)
 
 User.create!(name: "Unnamed Unnamed",
-			 email: "eyebp9@example.com",
+			 email: "eyebp9@gmail.com",
 			 password: "0639239312",
 			 password_confirmation: "0639239312",
 			 admin: false,
